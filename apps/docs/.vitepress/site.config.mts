@@ -3,49 +3,53 @@ import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 import { searchForWorkspaceRoot } from 'vite'
+import {
+  componentCatalog,
+  componentCategoryLabels,
+} from '../../../packages/ui/src/registry/component-catalog'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const docsRoot = resolve(__dirname, '..')
+const guideItems = [
+  { text: '快速开始', link: '/guide/getting-started' },
+  { text: '组件规范', link: '/guide/component-standards' },
+  { text: '文档规范', link: '/guide/docs-standards' },
+]
+const componentSidebar = Object.entries(componentCategoryLabels).map(([category, label]) => ({
+  text: label,
+  items: componentCatalog
+    .filter((component) => component.category === category)
+    .map((component) => ({
+      text: component.title,
+      link: component.docsPath,
+    })),
+}))
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'Grid Edit UI',
+  title: 'Sunny UI',
   description:
-    'Vue 3 Monorepo component system powered by pnpm workspace, Turbo, Tailwind and VitePress.',
+    'Sunny monorepo component system powered by pnpm workspace, Turbo, Tailwind and VitePress.',
   cleanUrls: true,
   themeConfig: {
     nav: [
       { text: '指南', link: '/guide/getting-started' },
-      { text: '组件', link: '/components/button' },
-      { text: '业务应用', link: 'http://127.0.0.1:5173/' },
+      { text: '规范', link: '/guide/component-standards' },
+      { text: '组件', link: componentCatalog[0]?.docsPath ?? '/components/button' },
+      { text: 'Sunny Studio', link: 'http://127.0.0.1:5173/' },
     ],
     sidebar: {
       '/guide/': [
         {
-          text: '开始',
-          items: [{ text: '快速开始', link: '/guide/getting-started' }],
+          text: '开始与规范',
+          items: guideItems,
         },
       ],
-      '/components/': [
-        {
-          text: '基础组件',
-          items: [
-            { text: 'Button', link: '/components/button' },
-            { text: 'Input', link: '/components/input' },
-            { text: 'Modal', link: '/components/modal' },
-            { text: 'Card', link: '/components/card' },
-            { text: 'Table', link: '/components/table' },
-            { text: 'Form', link: '/components/form' },
-          ],
-        },
-      ],
+      '/components/': componentSidebar,
       '/': [
         {
           text: '文档',
-          items: [
-            { text: '首页', link: '/' },
-            { text: '快速开始', link: '/guide/getting-started' },
-          ],
+          items: [{ text: '首页', link: '/' }, ...guideItems],
         },
       ],
     },
@@ -57,11 +61,11 @@ export default defineConfig({
     resolve: {
       alias: [
         {
-          find: /^@grid-edit\/ui\/styles\.css$/,
+          find: /^@sunny\/ui\/styles\.css$/,
           replacement: resolve(docsRoot, '../../packages/ui/src/styles/index.css'),
         },
         {
-          find: /^@grid-edit\/ui$/,
+          find: /^@sunny\/ui$/,
           replacement: resolve(docsRoot, '../../packages/ui/src/index.ts'),
         },
         {

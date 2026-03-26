@@ -11,29 +11,41 @@
       "default": "./src/index.ts"
     },
     "./styles.css": "./src/styles/index.css",
+    "./badge": {
+      "types": "./dist/entries/badge.d.ts",
+      "default": "./src/entries/badge.ts"
+    },
     "./button": {
-      "types": "./dist/button.d.ts",
-      "default": "./src/button.ts"
+      "types": "./dist/entries/button.d.ts",
+      "default": "./src/entries/button.ts"
     },
     "./input": {
-      "types": "./dist/input.d.ts",
-      "default": "./src/input.ts"
+      "types": "./dist/entries/input.d.ts",
+      "default": "./src/entries/input.ts"
     },
     "./modal": {
-      "types": "./dist/modal.d.ts",
-      "default": "./src/modal.ts"
+      "types": "./dist/entries/modal.d.ts",
+      "default": "./src/entries/modal.ts"
     },
     "./card": {
-      "types": "./dist/card.d.ts",
-      "default": "./src/card.ts"
+      "types": "./dist/entries/card.d.ts",
+      "default": "./src/entries/card.ts"
     },
     "./table": {
-      "types": "./dist/table.d.ts",
-      "default": "./src/table.ts"
+      "types": "./dist/entries/table.d.ts",
+      "default": "./src/entries/table.ts"
     },
     "./form": {
-      "types": "./dist/form.d.ts",
-      "default": "./src/form.ts"
+      "types": "./dist/entries/form.d.ts",
+      "default": "./src/entries/form.ts"
+    },
+    "./metric-panel": {
+      "types": "./dist/entries/metric-panel.d.ts",
+      "default": "./src/entries/metric-panel.ts"
+    },
+    "./empty-panel": {
+      "types": "./dist/entries/empty-panel.d.ts",
+      "default": "./src/entries/empty-panel.ts"
     }
   },
   "files": [

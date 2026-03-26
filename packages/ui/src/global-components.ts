@@ -1,12 +1,12 @@
-import type EmptyPanel from './components/business/EmptyPanel.vue'
-import type MetricPanel from './components/business/MetricPanel.vue'
-import type UiBadge from './components/base/UiBadge.vue'
-import type UiButton from './components/base/UiButton.vue'
-import type UiCard from './components/base/UiCard.vue'
-import type UiModal from './components/base/UiModal.vue'
-import type UiTable from './components/base/UiTable.vue'
-import type UiForm from './components/form/UiForm.vue'
-import type UiInput from './components/form/UiInput.vue'
+import type EmptyPanel from './components/patterns/empty-panel/EmptyPanel.vue'
+import type MetricPanel from './components/patterns/metric-panel/MetricPanel.vue'
+import type UiBadge from './components/feedback/badge/UiBadge.vue'
+import type UiButton from './components/feedback/button/UiButton.vue'
+import type UiCard from './components/layout/card/UiCard.vue'
+import type UiModal from './components/feedback/modal/UiModal.vue'
+import type UiTable from './components/data-display/table/UiTable.vue'
+import type UiForm from './components/data-entry/form/UiForm.vue'
+import type UiInput from './components/data-entry/input/UiInput.vue'
 
 declare module 'vue' {
   export interface GlobalComponents {
