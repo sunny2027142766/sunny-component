@@ -3,10 +3,7 @@ import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 import { searchForWorkspaceRoot } from 'vite'
-import {
-  componentCatalog,
-  componentCategoryLabels,
-} from '../../../packages/ui/src/registry/component-catalog'
+import { componentCatalog, componentCategoryLabels } from '@sunny/ui/catalog'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const docsRoot = resolve(__dirname, '..')
@@ -61,14 +58,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
     resolve: {
       alias: [
-        {
-          find: /^@sunny\/ui\/styles\.css$/,
-          replacement: resolve(docsRoot, '../../packages/ui/src/styles/index.css'),
-        },
-        {
-          find: /^@sunny\/ui$/,
-          replacement: resolve(docsRoot, '../../packages/ui/src/index.ts'),
-        },
         {
           find: '@docs',
           replacement: docsRoot,

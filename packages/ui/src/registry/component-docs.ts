@@ -1,12 +1,12 @@
-import { uiButtonDoc } from '../components/feedback/button'
-import { uiBadgeDoc } from '../components/feedback/badge'
-import { uiModalDoc } from '../components/feedback/modal'
-import { uiCardDoc } from '../components/layout/card'
-import { uiInputDoc } from '../components/data-entry/input'
-import { uiFormDoc } from '../components/data-entry/form'
-import { uiTableDoc } from '../components/data-display/table'
-import { metricPanelDoc } from '../components/patterns/metric-panel'
-import { emptyPanelDoc } from '../components/patterns/empty-panel'
+import { uiButtonDoc } from '../components/feedback/button/UiButton.docs.ts'
+import { uiBadgeDoc } from '../components/feedback/badge/UiBadge.docs.ts'
+import { uiModalDoc } from '../components/feedback/modal/UiModal.docs.ts'
+import { uiCardDoc } from '../components/layout/card/UiCard.docs.ts'
+import { uiInputDoc } from '../components/data-entry/input/UiInput.docs.ts'
+import { uiFormDoc } from '../components/data-entry/form/UiForm.docs.ts'
+import { uiTableDoc } from '../components/data-display/table/UiTable.docs.ts'
+import { metricPanelDoc } from '../components/patterns/metric-panel/MetricPanel.docs.ts'
+import { emptyPanelDoc } from '../components/patterns/empty-panel/EmptyPanel.docs.ts'
 
 export const componentDocs = [
   uiButtonDoc,

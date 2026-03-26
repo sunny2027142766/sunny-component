@@ -5,10 +5,10 @@
   "packageManager": "pnpm@10.30.3",
   "scripts": {
     "dev": "pnpm --filter @sunny/web dev",
-    "dev:docs": "pnpm --filter @sunny/docs dev",
-    "dev:all": "turbo run dev --parallel --continue --filter=@sunny/web --filter=@sunny/docs",
+    "dev:docs": "turbo run dev --parallel --continue --filter=@sunny/ui --filter=@sunny/docs",
+    "dev:all": "turbo run dev --parallel --continue --filter=@sunny/ui --filter=@sunny/web --filter=@sunny/docs",
     "build": "turbo run build --filter=@sunny/ui --filter=@sunny/web",
-    "build:docs": "pnpm --filter @sunny/docs build",
+    "build:docs": "turbo run build --filter=@sunny/docs",
     "lint": "eslint . --ext .js,.mjs,.cjs,.ts,.vue",
     "lint:fix": "eslint . --ext .js,.mjs,.cjs,.ts,.vue --fix",
     "format": "prettier . --write",

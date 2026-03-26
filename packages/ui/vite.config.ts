@@ -17,11 +17,13 @@ export default defineConfig({
   build: {
     target: 'es2020',
     sourcemap: true,
-    rollupOptions: {
+    rolldownOptions: {
       input,
+      preserveEntrySignatures: 'strict',
       external: ['vue'],
       output: {
         format: 'es',
+        exports: 'named',
         entryFileNames: '[name].js',
         chunkFileNames: 'chunks/[name]-[hash].js',
         assetFileNames: 'assets/[name][extname]',
