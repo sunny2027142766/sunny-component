@@ -1,0 +1,56 @@
+{
+  "name": "@grid-edit/ui",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    },
+    "./styles.css": "./src/styles/index.css",
+    "./button": {
+      "types": "./dist/button.d.ts",
+      "default": "./src/button.ts"
+    },
+    "./input": {
+      "types": "./dist/input.d.ts",
+      "default": "./src/input.ts"
+    },
+    "./modal": {
+      "types": "./dist/modal.d.ts",
+      "default": "./src/modal.ts"
+    },
+    "./card": {
+      "types": "./dist/card.d.ts",
+      "default": "./src/card.ts"
+    },
+    "./table": {
+      "types": "./dist/table.d.ts",
+      "default": "./src/table.ts"
+    },
+    "./form": {
+      "types": "./dist/form.d.ts",
+      "default": "./src/form.ts"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vue/tsconfig": "^0.9.0",
+    "typescript": "~5.9.3",
+    "vue": "^3.5.30",
+    "vue-tsc": "^3.2.5"
+  }
+}

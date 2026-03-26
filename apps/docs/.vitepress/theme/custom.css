@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@source "../../components";
+@source "../../guide";
+@source "../../components/demos";
+@source "../../../../packages/ui/src";
+@import "../../../../packages/ui/src/styles/index.css";
+
+@theme {
+  --font-sans: "Space Grotesk", "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-bg: #f8fafc;
+  --vp-c-bg-soft: #ffffff;
+  --vp-c-bg-alt: #f1f5f9;
+}
+
+.VPHomeHero .name,
+.VPHomeHero .text {
+  max-width: 14ch;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: -0.03em;
+}

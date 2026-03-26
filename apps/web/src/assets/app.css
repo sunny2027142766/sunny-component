@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@source "../../../../packages/ui/src";
+@import "../../../../packages/ui/src/styles/index.css";
+
+@theme {
+  --font-sans: "Space Grotesk", "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-stone-100 text-slate-600 antialiased;
+  }
+
+  #app {
+    @apply min-h-screen;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}

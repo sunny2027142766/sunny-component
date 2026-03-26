@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light;
+  --grid-surface: 255 255 255;
+  --grid-muted: 245 245 244;
+  --grid-line: 226 232 240;
+  --grid-text: 15 23 42;
+  --grid-soft: 71 85 105;
+  --grid-brand: 13 148 136;
+  --grid-brand-strong: 15 118 110;
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(13, 148, 136, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 24%),
+    linear-gradient(180deg, #fcfbf7, #f4f1e8);
+  color: rgb(var(--grid-soft));
+  font-family:
+    'Space Grotesk',
+    'Avenir Next',
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+}
