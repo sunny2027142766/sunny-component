@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { metricPanelDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import MetricPanelDemo from './demos/MetricPanelDemo.vue'
+import MetricPanelDemo from '../examples/components/MetricPanelDemo.vue'
 </script>
 
 # MetricPanel

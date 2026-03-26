@@ -30,6 +30,7 @@ export default defineConfig({
   title: 'Sunny UI',
   description:
     'Sunny monorepo component system powered by pnpm workspace, Turbo, Tailwind and VitePress.',
+  appearance: true,
   cleanUrls: true,
   themeConfig: {
     nav: [

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { uiFormDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import FormDemo from './demos/FormDemo.vue'
+import FormDemo from '../examples/components/FormDemo.vue'
 </script>
 
 # Form

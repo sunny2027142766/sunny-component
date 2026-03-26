@@ -13,7 +13,7 @@ const count = ref(0)
         action-label="立即创建"
         @action="count += 1"
       />
-      <p class="text-sm text-slate-500">按钮点击次数：{{ count }}</p>
+      <p class="text-sm text-slate-500 dark:text-slate-400">按钮点击次数：{{ count }}</p>
     </div>
   </DemoBlock>
 </template>

@@ -14,7 +14,7 @@ const open = ref(false)
       width="sm"
       show-footer
     >
-      <p class="text-sm leading-7 text-slate-500">
+      <p class="text-sm leading-7 text-slate-500 dark:text-slate-400">
         按钮、遮罩、面板尺寸和关闭逻辑都来自 Sunny UI。
       </p>
     </UiModal>

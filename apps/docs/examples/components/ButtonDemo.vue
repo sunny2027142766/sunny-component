@@ -11,7 +11,11 @@ const command = "import { UiButton } from '@sunny/ui/button'"
       <UiButton variant="danger">Danger</UiButton>
     </div>
     <template #meta>
-      <code class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-500">{{ command }}</code>
+      <code
+        class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-500 dark:bg-slate-900 dark:text-slate-400"
+      >
+        {{ command }}
+      </code>
     </template>
   </DemoBlock>
 </template>

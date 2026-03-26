@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { uiBadgeDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import BadgeDemo from './demos/BadgeDemo.vue'
+import BadgeDemo from '../examples/components/BadgeDemo.vue'
 </script>
 
 # Badge

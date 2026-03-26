@@ -35,8 +35,12 @@ defineEmits<{
 <template>
   <form class="grid gap-5" @submit.prevent="$emit('submit')">
     <div v-if="title || description" class="grid gap-1.5">
-      <h3 v-if="title" class="text-xl font-semibold tracking-tight text-slate-950">{{ title }}</h3>
-      <p v-if="description" class="text-sm leading-6 text-slate-500">{{ description }}</p>
+      <h3 v-if="title" class="text-xl font-semibold tracking-tight text-slate-950 dark:text-slate-50">
+        {{ title }}
+      </h3>
+      <p v-if="description" class="text-sm leading-6 text-slate-500 dark:text-slate-400">
+        {{ description }}
+      </p>
     </div>
 
     <div class="grid gap-4">

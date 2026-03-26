@@ -49,10 +49,12 @@ function alignClass(align?: TableColumn['align']) {
 </script>
 
 <template>
-  <div class="overflow-hidden rounded-[28px] border border-slate-200 bg-white">
+  <div
+    class="overflow-hidden rounded-[28px] border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950/75"
+  >
     <div class="overflow-x-auto">
-      <table class="min-w-full divide-y divide-slate-200 text-sm">
-        <thead class="bg-slate-50/80 text-slate-500">
+      <table class="min-w-full divide-y divide-slate-200 text-sm dark:divide-slate-800">
+        <thead class="bg-slate-50/80 text-slate-500 dark:bg-slate-900/80 dark:text-slate-400">
           <tr>
             <th
               v-for="column in columns"
@@ -64,11 +66,14 @@ function alignClass(align?: TableColumn['align']) {
             </th>
           </tr>
         </thead>
-        <tbody v-if="hasRows" class="divide-y divide-slate-100 text-slate-700">
+        <tbody
+          v-if="hasRows"
+          class="divide-y divide-slate-100 text-slate-700 dark:divide-slate-800 dark:text-slate-200"
+        >
           <tr
             v-for="(row, index) in rows"
             :key="String(row[rowKey] ?? index)"
-            class="transition hover:bg-slate-50/80"
+            class="transition hover:bg-slate-50/80 dark:hover:bg-slate-900/80"
           >
             <td
               v-for="column in columns"
@@ -82,7 +87,10 @@ function alignClass(align?: TableColumn['align']) {
       </table>
     </div>
 
-    <div v-if="!hasRows" class="grid min-h-40 place-items-center px-6 py-10 text-sm text-slate-400">
+    <div
+      v-if="!hasRows"
+      class="grid min-h-40 place-items-center px-6 py-10 text-sm text-slate-400 dark:text-slate-500"
+    >
       {{ emptyText }}
     </div>
   </div>

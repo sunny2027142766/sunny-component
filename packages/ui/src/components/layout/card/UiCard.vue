@@ -29,9 +29,12 @@ const cardClass = computed(() =>
     props.padding === 'sm' && 'p-4',
     props.padding === 'md' && 'p-6',
     props.padding === 'lg' && 'p-8',
-    props.tone === 'default' && 'border-slate-200/80 bg-white/90 shadow-slate-950/5',
-    props.tone === 'soft' && 'border-transparent bg-slate-900 text-white shadow-slate-950/10',
-    props.tone === 'dark' && 'border-slate-900/70 bg-slate-950 text-white shadow-slate-950/20',
+    props.tone === 'default' &&
+      'border-slate-200/80 bg-white/90 shadow-slate-950/5 dark:border-slate-800 dark:bg-slate-950/70 dark:text-slate-100 dark:shadow-black/20',
+    props.tone === 'soft' &&
+      'border-transparent bg-slate-900 text-white shadow-slate-950/10 dark:bg-slate-900/95 dark:shadow-black/30',
+    props.tone === 'dark' &&
+      'border-slate-900/70 bg-slate-950 text-white shadow-slate-950/20 dark:border-slate-700 dark:bg-black dark:shadow-black/40',
   ),
 )
 

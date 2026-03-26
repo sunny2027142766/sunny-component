@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { uiCardDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import CardDemo from './demos/CardDemo.vue'
+import CardDemo from '../examples/components/CardDemo.vue'
 </script>
 
 # Card

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { uiModalDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import ModalDemo from './demos/ModalDemo.vue'
+import ModalDemo from '../examples/components/ModalDemo.vue'
 </script>
 
 # Modal

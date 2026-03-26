@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { uiTableDoc } from '@sunny/ui'
-import ComponentDocPage from './docs/ComponentDocPage.vue'
-import TableDemo from './demos/TableDemo.vue'
+import TableDemo from '../examples/components/TableDemo.vue'
 </script>
 
 # Table

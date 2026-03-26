@@ -38,7 +38,7 @@ const emit = defineEmits<{
 
 const panelClass = computed(() =>
   classNames(
-    'w-full rounded-[32px] border border-slate-200 bg-white p-6 shadow-2xl shadow-slate-950/15',
+    'w-full rounded-[32px] border border-slate-200 bg-white p-6 shadow-2xl shadow-slate-950/15 dark:border-slate-800 dark:bg-slate-950 dark:shadow-black/40',
     props.width === 'sm' && 'max-w-md',
     props.width === 'md' && 'max-w-2xl',
     props.width === 'lg' && 'max-w-4xl',
@@ -93,14 +93,19 @@ onBeforeUnmount(() => {
         <div :class="panelClass" @click.stop>
           <div class="mb-5 flex items-start justify-between gap-4">
             <div class="space-y-2">
-              <h3 v-if="title" class="text-2xl font-semibold tracking-tight text-slate-950">
+              <h3
+                v-if="title"
+                class="text-2xl font-semibold tracking-tight text-slate-950 dark:text-slate-50"
+              >
                 {{ title }}
               </h3>
-              <p v-if="description" class="text-sm leading-6 text-slate-500">{{ description }}</p>
+              <p v-if="description" class="text-sm leading-6 text-slate-500 dark:text-slate-400">
+                {{ description }}
+              </p>
             </div>
             <button
               type="button"
-              class="inline-flex size-10 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-slate-200 hover:text-slate-900"
+              class="inline-flex size-10 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-slate-200 hover:text-slate-900 dark:bg-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100"
               @click="close"
             >
               ×

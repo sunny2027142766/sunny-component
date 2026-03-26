@@ -1,8 +1,11 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
 @import 'tailwindcss';
 @import '../../../../packages/ui/src/styles/index.css';
 @source "../../components";
 @source "../../guide";
-@source "../../components/demos";
+@source "../../examples/components";
+@source "./components";
 @source "../../../../packages/ui/src";
 
 @theme {
@@ -16,6 +19,82 @@
   --vp-c-bg: #f8fafc;
   --vp-c-bg-soft: #ffffff;
   --vp-c-bg-alt: #f1f5f9;
+  --vp-c-text-1: #0f172a;
+  --vp-c-text-2: #475569;
+  --vp-c-divider: rgba(148, 163, 184, 0.28);
+  --vp-home-hero-name-color: #0f172a;
+  --vp-home-hero-text-color: #0f172a;
+  --vp-home-hero-tagline-color: #475569;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --vp-c-brand-1: #2dd4bf;
+  --vp-c-brand-2: #14b8a6;
+  --vp-c-brand-3: #0f766e;
+  --vp-c-bg: #020617;
+  --vp-c-bg-soft: #0f172a;
+  --vp-c-bg-alt: #111827;
+  --vp-c-text-1: #e2e8f0;
+  --vp-c-text-2: #94a3b8;
+  --vp-c-divider: rgba(148, 163, 184, 0.2);
+  --vp-home-hero-name-color: #f8fafc;
+  --vp-home-hero-text-color: #cbd5e1;
+  --vp-home-hero-tagline-color: #94a3b8;
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(13, 148, 136, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 24%),
+    linear-gradient(180deg, #fcfbf7, #f4f1e8);
+  color: rgb(var(--grid-soft));
+  font-family: 'Space Grotesk', 'Avenir Next', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 26%),
+    linear-gradient(180deg, #020617, #0f172a 55%, #111827);
+  color: #94a3b8;
+}
+
+.VPNavBar,
+.VPNavScreen,
+.VPDoc,
+.VPContent,
+.VPHome {
+  background: transparent;
+}
+
+.VPNavBar.has-sidebar .content-body,
+.VPNavBar .content-body,
+.VPSidebar {
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 86%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+.dark .VPSidebar,
+.dark .VPNavBar.has-sidebar .content-body,
+.dark .VPNavBar .content-body {
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 92%, transparent);
+}
+
+.VPFeature {
+  border-radius: 28px;
+}
+
+.VPFeature .box {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+}
+
+.dark .VPFeature .box {
+  border-color: rgba(148, 163, 184, 0.16);
+  background: rgba(15, 23, 42, 0.72);
 }
 
 .VPHomeHero .name,
@@ -23,8 +102,15 @@
   max-width: 14ch;
 }
 
+.vp-doc,
+.vp-doc p,
+.vp-doc li {
+  color: var(--vp-c-text-2);
+}
+
 .vp-doc h1,
 .vp-doc h2,
 .vp-doc h3 {
   letter-spacing: -0.03em;
+  color: var(--vp-c-text-1);
 }
