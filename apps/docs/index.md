@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Sunny UI
-  text: Monorepo 组件体系示例
-  tagline: 基于 pnpm workspace、Turbo、Tailwind CSS、VitePress 的 Sunny 组件研发体系。
+  text: 页面搭建更快、更统一
+  tagline: 面向业务场景的 Vue 组件库，提供清晰文档、可复用组件和一致的交互体验。
   actions:
     - theme: brand
       text: 快速开始
@@ -14,12 +14,12 @@ hero:
       link: /components/button
 
 features:
-  - title: 一套 Sunny UI，多处消费
-    details: Sunny UI 同时服务 Sunny Studio 和 Sunny Docs，避免示例与实际实现分叉。
-  - title: 注册表驱动文档导航
-    details: 组件分类、导入方式和文档入口统一来自组件注册表，新增组件时不再到处补配置。
-  - title: Turbo 驱动任务图
-    details: dev、build、typecheck 都由 Turbo 编排，适合继续扩展更多 package。
-  - title: 规范先行的组件体系
-    details: 组件规范与文档规范作为团队约定写进 Sunny Docs，让组件库长期演进更稳定。
+  - title: 开箱即用的基础组件
+    details: 覆盖按钮、输入、表单、弹窗、表格等常见场景，直接组合即可完成页面搭建。
+  - title: 示例和文档一体化
+    details: 每个组件都配有示例与说明，边看边用，减少沟通成本和重复试错。
+  - title: 统一视觉与交互体验
+    details: 通过一致的设计规范和交互规则，让不同页面保持统一、专业的产品体验。
+  - title: 适合持续迭代
+    details: 从个人项目到团队协作，都能在保持稳定性的同时快速新增和迭代组件能力。
 ---

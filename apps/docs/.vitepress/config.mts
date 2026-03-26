@@ -37,7 +37,7 @@ export default defineConfig({
       { text: '指南', link: '/guide/getting-started' },
       { text: '规范', link: '/guide/component-standards' },
       { text: '组件', link: componentCatalog[0]?.docsPath ?? '/components/button' },
-      { text: 'Sunny Studio', link: 'http://127.0.0.1:5173/' },
+      { text: '实验室', link: 'http://127.0.0.1:5173/' },
     ],
     sidebar: {
       '/guide/': [
@@ -54,7 +54,7 @@ export default defineConfig({
         },
       ],
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/sunny2027142766/sunny-component' }],
     outline: 'deep',
   },
   vite: {

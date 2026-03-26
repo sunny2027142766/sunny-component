@@ -2,66 +2,67 @@
   "name": "@sunny/ui",
   "version": "0.2.0",
   "type": "module",
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
+      "default": "./dist/index.js"
     },
-    "./styles.css": "./src/styles/index.css",
+    "./styles.css": "./dist/styles.css",
     "./badge": {
       "types": "./dist/entries/badge.d.ts",
-      "default": "./src/entries/badge.ts"
+      "default": "./dist/entries/badge.js"
     },
     "./button": {
       "types": "./dist/entries/button.d.ts",
-      "default": "./src/entries/button.ts"
+      "default": "./dist/entries/button.js"
     },
     "./input": {
       "types": "./dist/entries/input.d.ts",
-      "default": "./src/entries/input.ts"
+      "default": "./dist/entries/input.js"
     },
     "./modal": {
       "types": "./dist/entries/modal.d.ts",
-      "default": "./src/entries/modal.ts"
+      "default": "./dist/entries/modal.js"
     },
     "./card": {
       "types": "./dist/entries/card.d.ts",
-      "default": "./src/entries/card.ts"
+      "default": "./dist/entries/card.js"
     },
     "./table": {
       "types": "./dist/entries/table.d.ts",
-      "default": "./src/entries/table.ts"
+      "default": "./dist/entries/table.js"
     },
     "./form": {
       "types": "./dist/entries/form.d.ts",
-      "default": "./src/entries/form.ts"
+      "default": "./dist/entries/form.js"
     },
     "./metric-panel": {
       "types": "./dist/entries/metric-panel.d.ts",
-      "default": "./src/entries/metric-panel.ts"
+      "default": "./dist/entries/metric-panel.js"
     },
     "./empty-panel": {
       "types": "./dist/entries/empty-panel.d.ts",
-      "default": "./src/entries/empty-panel.ts"
+      "default": "./dist/entries/empty-panel.js"
     }
   },
   "files": [
-    "src",
     "dist"
   ],
   "scripts": {
-    "build": "vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist && node ./scripts/postbuild.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "peerDependencies": {
     "vue": "^3.5.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.9.0",
     "typescript": "~5.9.3",
+    "vite": "^8.0.1",
     "vue": "^3.5.30",
     "vue-tsc": "^3.2.5"
   }

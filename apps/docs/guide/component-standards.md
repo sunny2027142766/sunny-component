@@ -47,7 +47,7 @@ packages/ui/src
 
 1. 在 `components/` 下实现组件
 2. 在 `core/components.ts` 注册导出
-3. 在 `registry/component-catalog.ts` 补充元数据
+3. 在 `registry/component-docs.ts` 补充文档与分类清单（注册表自动消费）
 4. 按需增加子路径导出
 5. 在 `docs` 中补 Demo、Props、事件和使用说明
 6. 运行 `lint`、`typecheck`、`build`

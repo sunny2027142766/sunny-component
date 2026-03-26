@@ -7,14 +7,15 @@
   --grid-soft: 71 85 105;
   --grid-brand: 13 148 136;
   --grid-brand-strong: 15 118 110;
+  --grid-font-family: 'Space Grotesk', 'Avenir Next', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
-body {
+.sunny-ui-theme {
   min-width: 320px;
   background:
     radial-gradient(circle at top left, rgba(13, 148, 136, 0.16), transparent 28%),
     radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 24%),
     linear-gradient(180deg, #fcfbf7, #f4f1e8);
   color: rgb(var(--grid-soft));
-  font-family: 'Space Grotesk', 'Avenir Next', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: var(--grid-font-family);
 }
