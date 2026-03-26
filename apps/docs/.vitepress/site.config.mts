@@ -10,7 +10,8 @@ const docsRoot = resolve(__dirname, '..')
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Grid Edit UI',
-  description: 'Vue 3 Monorepo component system powered by pnpm workspace, Turbo, Tailwind and VitePress.',
+  description:
+    'Vue 3 Monorepo component system powered by pnpm workspace, Turbo, Tailwind and VitePress.',
   cleanUrls: true,
   themeConfig: {
     nav: [
@@ -22,9 +23,7 @@ export default defineConfig({
       '/guide/': [
         {
           text: '开始',
-          items: [
-            { text: '快速开始', link: '/guide/getting-started' },
-          ],
+          items: [{ text: '快速开始', link: '/guide/getting-started' }],
         },
       ],
       '/components/': [

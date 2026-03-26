@@ -35,7 +35,9 @@ const cardClass = computed(() =>
   ),
 )
 
-const hasHeader = computed(() => Boolean(props.title || props.description || slots.header || slots.actions))
+const hasHeader = computed(() =>
+  Boolean(props.title || props.description || slots.header || slots.actions),
+)
 </script>
 
 <template>
@@ -43,8 +45,12 @@ const hasHeader = computed(() => Boolean(props.title || props.description || slo
     <header v-if="hasHeader" class="mb-5 flex items-start justify-between gap-4">
       <div class="grid gap-1.5">
         <slot name="header">
-          <h3 v-if="title" class="text-lg font-semibold tracking-tight text-current">{{ title }}</h3>
-          <p v-if="description" class="max-w-2xl text-sm leading-6 text-current/70">{{ description }}</p>
+          <h3 v-if="title" class="text-lg font-semibold tracking-tight text-current">
+            {{ title }}
+          </h3>
+          <p v-if="description" class="max-w-2xl text-sm leading-6 text-current/70">
+            {{ description }}
+          </p>
         </slot>
       </div>
       <div v-if="$slots.actions" class="shrink-0">

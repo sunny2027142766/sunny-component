@@ -93,7 +93,9 @@ onBeforeUnmount(() => {
         <div :class="panelClass" @click.stop>
           <div class="mb-5 flex items-start justify-between gap-4">
             <div class="space-y-2">
-              <h3 v-if="title" class="text-2xl font-semibold tracking-tight text-slate-950">{{ title }}</h3>
+              <h3 v-if="title" class="text-2xl font-semibold tracking-tight text-slate-950">
+                {{ title }}
+              </h3>
               <p v-if="description" class="text-sm leading-6 text-slate-500">{{ description }}</p>
             </div>
             <button

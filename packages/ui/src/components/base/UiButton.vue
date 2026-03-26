@@ -33,10 +33,14 @@ const classes = computed(() =>
     props.size === 'sm' && 'px-3.5 py-2 text-sm',
     props.size === 'md' && 'px-4 py-2.5 text-sm',
     props.size === 'lg' && 'px-5 py-3 text-base',
-    props.variant === 'primary' && 'border-transparent bg-slate-950 text-white shadow-lg shadow-slate-950/10 hover:-translate-y-0.5 hover:bg-slate-900',
-    props.variant === 'secondary' && 'border-slate-200 bg-white text-slate-900 hover:-translate-y-0.5 hover:border-teal-600/20 hover:text-teal-700',
-    props.variant === 'ghost' && 'border-transparent bg-teal-50 text-teal-700 hover:-translate-y-0.5 hover:bg-teal-100',
-    props.variant === 'danger' && 'border-transparent bg-rose-600 text-white shadow-lg shadow-rose-600/15 hover:-translate-y-0.5 hover:bg-rose-500',
+    props.variant === 'primary' &&
+      'border-transparent bg-slate-950 text-white shadow-lg shadow-slate-950/10 hover:-translate-y-0.5 hover:bg-slate-900',
+    props.variant === 'secondary' &&
+      'border-slate-200 bg-white text-slate-900 hover:-translate-y-0.5 hover:border-teal-600/20 hover:text-teal-700',
+    props.variant === 'ghost' &&
+      'border-transparent bg-teal-50 text-teal-700 hover:-translate-y-0.5 hover:bg-teal-100',
+    props.variant === 'danger' &&
+      'border-transparent bg-rose-600 text-white shadow-lg shadow-rose-600/15 hover:-translate-y-0.5 hover:bg-rose-500',
   ),
 )
 </script>

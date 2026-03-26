@@ -30,7 +30,29 @@ pnpm build
 pnpm typecheck
 ```
 
-## UI 包导入方式
+## UI 包接入方式
+
+推荐在应用入口统一安装插件，这样页面和文档示例里可以直接使用全局组件，并且保留类型提示：
+
+```ts
+import { createApp } from 'vue'
+import { GridEditUIPlugin } from '@grid-edit/ui'
+import '@grid-edit/ui/styles.css'
+import App from './App.vue'
+
+createApp(App).use(GridEditUIPlugin).mount('#app')
+```
+
+完成安装后，模板中可以直接使用：
+
+```vue
+<template>
+  <UiButton>Primary</UiButton>
+  <UiInput label="项目名称" />
+</template>
+```
+
+如果你需要工具函数、类型或局部注册，也可以继续从根入口或子路径按需导入：
 
 根导出：
 

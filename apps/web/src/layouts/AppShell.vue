@@ -8,7 +8,9 @@ const navItems = [
 
 <template>
   <div class="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 py-6 sm:px-6 lg:px-8">
-    <header class="rounded-[36px] bg-slate-950 px-6 py-8 text-white shadow-2xl shadow-slate-950/15 sm:px-8">
+    <header
+      class="rounded-[36px] bg-slate-950 px-6 py-8 text-white shadow-2xl shadow-slate-950/15 sm:px-8"
+    >
       <div class="grid gap-6 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
         <div class="space-y-4">
           <p class="text-xs uppercase tracking-[0.35em] text-white/45">Grid Edit Workspace</p>
@@ -17,7 +19,8 @@ const navItems = [
               用 Monorepo 同时驱动组件库、业务应用和文档站
             </h1>
             <p class="max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
-              `packages/ui` 聚焦组件沉淀，`apps/web` 用真实业务页面消费，`apps/docs` 用 VitePress 展示文档和在线 Demo。
+              `packages/ui` 聚焦组件沉淀，`apps/web` 用真实业务页面消费，`apps/docs` 用 VitePress
+              展示文档和在线 Demo。
             </p>
           </div>
         </div>

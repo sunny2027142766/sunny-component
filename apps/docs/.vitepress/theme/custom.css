@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import '../../../../packages/ui/src/styles/index.css';
 @source "../../components";
 @source "../../guide";
 @source "../../components/demos";
 @source "../../../../packages/ui/src";
-@import "../../../../packages/ui/src/styles/index.css";
 
 @theme {
-  --font-sans: "Space Grotesk", "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-sans: 'Space Grotesk', 'Avenir Next', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 :root {

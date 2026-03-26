@@ -24,7 +24,9 @@ defineEmits<{
 
 <template>
   <UiCard class="text-center">
-    <div class="mx-auto grid size-16 place-items-center rounded-3xl bg-teal-50 text-3xl font-light text-teal-700">
+    <div
+      class="mx-auto grid size-16 place-items-center rounded-3xl bg-teal-50 text-3xl font-light text-teal-700"
+    >
       +
     </div>
     <div class="grid gap-2">
