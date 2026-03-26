@@ -14,6 +14,7 @@ export default tseslint.config(
       '**/.vite/**',
       '**/.vitepress/cache/**',
       '**/.vitepress/dist/**',
+      '**/.vitepress/.temp/**',
     ],
   },
   js.configs.recommended,

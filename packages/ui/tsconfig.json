@@ -7,7 +7,7 @@
     "declaration": true,
     "emitDeclarationOnly": false,
     "paths": {
-      "@grid-edit/ui/*": ["./src/*"]
+      "@sunny/ui/*": ["./src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.vue"]

@@ -2,7 +2,7 @@
 const steps = [
   {
     title: 'pnpm workspace',
-    desc: '解决包之间的本地联调和依赖组织，让应用与组件库在同一仓库演进。',
+    desc: '解决包之间的本地联调和依赖组织，让 Sunny UI、Sunny Studio 和 Sunny Docs 在同一仓库演进。',
   },
   {
     title: 'Turbo pipeline',
@@ -10,7 +10,7 @@ const steps = [
   },
   {
     title: 'Tailwind + VitePress',
-    desc: '既有业务页面的快速搭建效率，也有文档站和在线 Demo 的落地路径。',
+    desc: '既有 Sunny Studio 的页面搭建效率，也有 Sunny Docs 和在线 Demo 的落地路径。',
   },
 ]
 </script>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const command = "import { UiButton } from '@grid-edit/ui/button'"
+const command = "import { UiButton } from '@sunny/ui/button'"
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
-import { formatCompactNumber, formatPercent, type TableColumn, type TableRow } from '@grid-edit/ui'
+import { formatCompactNumber, formatPercent, type TableColumn, type TableRow } from '@sunny/ui'
 
 const open = ref(false)
 const search = ref('')
@@ -43,7 +43,7 @@ const metrics = [
     title: '自动化处理率',
     value: formatPercent(0.81),
     trend: '+7.4%',
-    hint: '表格与表单在业务应用中直接复用，无需二次包装。',
+    hint: '表格与表单在 Sunny Studio 中直接复用，无需二次包装。',
     tone: 'info' as const,
   },
   {
@@ -93,7 +93,7 @@ async function submitLead() {
     <section class="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
       <UiCard
         title="销售漏斗总览"
-        description="Dashboard 页面直接展示 UI 库里的 Button、Input、Table、Form、Modal、Card。"
+        description="Sunny Studio 页面直接展示 Sunny UI 里的 Button、Input、Table、Form、Modal、Card。"
       >
         <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div class="w-full max-w-md">
@@ -119,9 +119,9 @@ async function submitLead() {
       >
         <div class="grid gap-4 text-sm text-white/70">
           <div class="rounded-3xl bg-white/10 p-5">
-            <p class="mb-2 text-xs uppercase tracking-[0.24em] text-white/45">Workspace</p>
+            <p class="mb-2 text-xs uppercase tracking-[0.24em] text-white/45">Sunny Studio</p>
             <p class="leading-7">
-              `apps/web` 与 `apps/docs` 都消费同一份 `packages/ui`
+              `Sunny Studio` 与 `Sunny Docs` 都消费同一份 `Sunny UI`
               源码，调一个组件，两个入口同时看到结果。
             </p>
           </div>
@@ -133,7 +133,7 @@ async function submitLead() {
           <div class="rounded-3xl bg-white/10 p-5">
             <p class="mb-2 text-xs uppercase tracking-[0.24em] text-white/45">组件策略</p>
             <p class="leading-7">
-              基础组件统一抽象为 `Button / Input / Modal / Card / Table /
+              `Sunny UI` 统一抽象 `Button / Input / Modal / Card / Table /
               Form`，业务组件继续建立在这层之上。
             </p>
           </div>
@@ -171,23 +171,23 @@ async function submitLead() {
         <div class="grid gap-4 md:grid-cols-3">
           <div class="rounded-[24px] border border-slate-200 bg-slate-50 p-5">
             <p class="mb-2 text-xs uppercase tracking-[0.24em] text-slate-400">packages</p>
-            <h3 class="text-lg font-semibold text-slate-950">UI Library</h3>
+            <h3 class="text-lg font-semibold text-slate-950">Sunny UI</h3>
             <p class="mt-2 text-sm leading-6 text-slate-500">
               统一导出、支持按需子路径、保留完整 TypeScript 类型。
             </p>
           </div>
           <div class="rounded-[24px] border border-slate-200 bg-slate-50 p-5">
             <p class="mb-2 text-xs uppercase tracking-[0.24em] text-slate-400">apps/web</p>
-            <h3 class="text-lg font-semibold text-slate-950">Dashboard</h3>
+            <h3 class="text-lg font-semibold text-slate-950">Sunny Studio</h3>
             <p class="mt-2 text-sm leading-6 text-slate-500">
-              一个真实业务入口，直接消费公共库和共享样式约束。
+              一个真实业务入口，直接消费 `Sunny UI` 和共享样式约束。
             </p>
           </div>
           <div class="rounded-[24px] border border-slate-200 bg-slate-50 p-5">
             <p class="mb-2 text-xs uppercase tracking-[0.24em] text-slate-400">apps/docs</p>
-            <h3 class="text-lg font-semibold text-slate-950">VitePress</h3>
+            <h3 class="text-lg font-semibold text-slate-950">Sunny Docs</h3>
             <p class="mt-2 text-sm leading-6 text-slate-500">
-              组件说明、Props 表与在线 Demo 同步维护。
+              `Sunny UI` 的组件说明、Props 表与在线 Demo 在这里同步维护。
             </p>
           </div>
         </div>

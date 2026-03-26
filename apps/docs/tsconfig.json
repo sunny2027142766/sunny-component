@@ -5,8 +5,8 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@grid-edit/ui": ["../../packages/ui/src/index.ts"],
-      "@grid-edit/ui/*": ["../../packages/ui/src/*"],
+      "@sunny/ui": ["../../packages/ui/src/index.ts"],
+      "@sunny/ui/*": ["../../packages/ui/src/*"],
       "@docs/*": ["./*"]
     }
   },

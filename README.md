@@ -1,10 +1,10 @@
-# grid-edit-demo
+# sunny-demo
 
 基于 `pnpm workspace` 的 Vue 3 Monorepo，包含：
 
-- `packages/ui`：公共组件库，提供统一导出与按需子路径入口
-- `apps/web`：业务 Dashboard，真实消费组件库
-- `apps/docs`：VitePress 文档站，展示组件用法、Props 和 Demo
+- `packages/ui`：`Sunny UI`，提供统一导出与按需子路径入口
+- `apps/web`：`Sunny Studio`，真实消费组件库
+- `apps/docs`：`Sunny Docs`，展示组件用法、Props 和 Demo
 
 常用命令：
 

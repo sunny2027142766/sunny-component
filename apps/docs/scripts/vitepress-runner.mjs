@@ -13,8 +13,9 @@ const { build, createServer, serve } = await import('vitepress')
 if (command === 'build') {
   await build(root, {
     onAfterConfigResolve(siteConfig) {
-      siteConfig.site.title = 'Grid Edit UI'
-      siteConfig.site.description = 'Vue 3 Monorepo component documentation powered by VitePress.'
+      siteConfig.site.title = 'Sunny UI'
+      siteConfig.site.description =
+        'Sunny UI documentation for the Sunny monorepo, powered by VitePress.'
     },
   })
 } else if (command === 'dev') {

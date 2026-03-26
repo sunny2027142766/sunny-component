@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TableColumn, TableRow } from '@grid-edit/ui'
+import type { TableColumn, TableRow } from '@sunny/ui'
 
 const columns: TableColumn[] = [
   { key: 'component', title: '组件' },

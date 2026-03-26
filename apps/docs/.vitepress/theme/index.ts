@@ -1,13 +1,13 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
-import { GridEditUIPlugin } from '@grid-edit/ui'
+import { SunnyUIPlugin } from '@sunny/ui'
 import DemoBlock from '../../components/DemoBlock.vue'
 import './custom.css'
 
 const theme: Theme = {
   extends: DefaultTheme,
   enhanceApp({ app }) {
-    app.use(GridEditUIPlugin)
+    app.use(SunnyUIPlugin)
     app.component('DemoBlock', DemoBlock)
   },
 }

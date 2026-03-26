@@ -37,7 +37,7 @@ const components = [
   EmptyPanel,
 ]
 
-export const GridEditUIPlugin: Plugin = {
+export const SunnyUIPlugin: Plugin = {
   install(app: App) {
     components.forEach((component) => {
       app.component(component.name ?? 'AnonymousComponent', component)
@@ -45,4 +45,4 @@ export const GridEditUIPlugin: Plugin = {
   },
 }
 
-export default GridEditUIPlugin
+export default SunnyUIPlugin

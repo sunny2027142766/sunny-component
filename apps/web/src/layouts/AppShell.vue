@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const navItems = [
-  { label: 'Dashboard', to: '/' },
-  { label: 'Workspace', to: '/components' },
-  { label: 'Delivery', to: '/workflow' },
+  { label: 'Studio', to: '/' },
+  { label: 'Sunny UI', to: '/components' },
+  { label: 'Sunny Flow', to: '/workflow' },
 ]
 </script>
 
@@ -13,14 +13,14 @@ const navItems = [
     >
       <div class="grid gap-6 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
         <div class="space-y-4">
-          <p class="text-xs uppercase tracking-[0.35em] text-white/45">Grid Edit Workspace</p>
+          <p class="text-xs uppercase tracking-[0.35em] text-white/45">Sunny Studio</p>
           <div class="space-y-3">
             <h1 class="max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-              用 Monorepo 同时驱动组件库、业务应用和文档站
+              用 Monorepo 同时驱动 Sunny UI、Sunny Studio 和 Sunny Docs
             </h1>
             <p class="max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
-              `packages/ui` 聚焦组件沉淀，`apps/web` 用真实业务页面消费，`apps/docs` 用 VitePress
-              展示文档和在线 Demo。
+              `packages/ui` 对应 `Sunny UI`，`apps/web` 对应 `Sunny Studio`，`apps/docs` 对应 `Sunny
+              Docs`，三者围绕同一套组件资产协同演进。
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@ const entries = [
 
     <UiCard
       title="为什么保留这一页"
-      description="业务应用里也需要看到组件资产，而不只是去文档站看。"
+      description="Sunny Studio 里也需要看到组件资产，而不只是去 Sunny Docs 看。"
     >
       <div class="grid gap-4 md:grid-cols-3">
         <div class="rounded-[24px] border border-slate-200 bg-white p-5">
@@ -51,7 +51,7 @@ const entries = [
         </div>
         <div class="rounded-[24px] border border-slate-200 bg-white p-5">
           <p class="text-sm leading-7 text-slate-500">
-            把应用内真实使用场景和文档站示例互相校验，避免脱节。
+            把 Sunny Studio 内的真实使用场景和 Sunny Docs 示例互相校验，避免脱节。
           </p>
         </div>
         <div class="rounded-[24px] border border-slate-200 bg-white p-5">

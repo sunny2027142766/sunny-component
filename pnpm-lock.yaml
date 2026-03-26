@@ -38,7 +38,7 @@ importers:
 
   apps/docs:
     dependencies:
-      '@grid-edit/ui':
+      '@sunny/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       vue:
@@ -72,7 +72,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@grid-edit/ui':
+      '@sunny/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       vue:

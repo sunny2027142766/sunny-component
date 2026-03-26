@@ -11,11 +11,11 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@grid-edit\/ui\/styles\.css$/,
+        find: /^@sunny\/ui\/styles\.css$/,
         replacement: resolve(__dirname, '../../packages/ui/src/styles/index.css'),
       },
       {
-        find: /^@grid-edit\/ui$/,
+        find: /^@sunny\/ui$/,
         replacement: resolve(__dirname, '../../packages/ui/src/index.ts'),
       },
       {

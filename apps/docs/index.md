@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Grid Edit UI
+  name: Sunny UI
   text: Monorepo 组件体系示例
-  tagline: 基于 pnpm workspace、Turbo、Tailwind CSS、VitePress 的 Vue 3 组件库工作台。
+  tagline: 基于 pnpm workspace、Turbo、Tailwind CSS、VitePress 的 Sunny 组件研发体系。
   actions:
     - theme: brand
       text: 快速开始
@@ -14,8 +14,8 @@ hero:
       link: /components/button
 
 features:
-  - title: 一个组件库，多处消费
-    details: UI 组件同时服务业务应用和文档站，避免示例与实际实现分叉。
+  - title: 一套 Sunny UI，多处消费
+    details: Sunny UI 同时服务 Sunny Studio 和 Sunny Docs，避免示例与实际实现分叉。
   - title: Turbo 驱动任务图
     details: dev、build、typecheck 都由 Turbo 编排，适合继续扩展更多 package。
   - title: Tailwind + Vue 3

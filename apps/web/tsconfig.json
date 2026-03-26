@@ -6,8 +6,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@grid-edit/ui": ["../../packages/ui/src/index.ts"],
-      "@grid-edit/ui/*": ["../../packages/ui/src/*"]
+      "@sunny/ui": ["../../packages/ui/src/index.ts"],
+      "@sunny/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": [

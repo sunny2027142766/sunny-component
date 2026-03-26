@@ -9,13 +9,13 @@ const open = ref(false)
     <UiButton @click="open = true">打开弹层</UiButton>
     <UiModal
       v-model="open"
-      title="文档站内 Demo"
-      description="这里与业务应用消费同一个 Modal 组件。"
+      title="Sunny Docs Demo"
+      description="这里与 Sunny Studio 消费同一个 Modal 组件。"
       width="sm"
       show-footer
     >
       <p class="text-sm leading-7 text-slate-500">
-        按钮、遮罩、面板尺寸和关闭逻辑都来自公共组件库。
+        按钮、遮罩、面板尺寸和关闭逻辑都来自 Sunny UI。
       </p>
     </UiModal>
   </DemoBlock>
