@@ -7,6 +7,7 @@ import { defineConfig, searchForWorkspaceRoot } from 'vite'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  base: '/sunny-component/',
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: [
