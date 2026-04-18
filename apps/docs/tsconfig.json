@@ -15,8 +15,6 @@
     "guide/**/*.md",
     "examples/**/*.vue",
     ".vitepress/**/*.ts",
-    ".vitepress/**/*.vue",
-    "../../packages/ui/src/**/*.ts",
-    "../../packages/ui/src/**/*.vue"
+    ".vitepress/**/*.vue"
   ]
 }

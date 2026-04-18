@@ -1,4 +1,4 @@
-import { componentCategoryLabels, componentDocs } from './component-docs'
+import { componentCategoryLabels, componentDocs } from './component-docs.ts'
 
 export type {
   ComponentCatalogCategory,

@@ -10,6 +10,10 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
+    "./catalog": {
+      "types": "./src/registry/component-catalog.ts",
+      "default": "./src/registry/component-catalog.ts"
+    },
     "./styles.css": "./dist/styles.css",
     "./badge": {
       "types": "./dist/entries/badge.d.ts",
@@ -52,7 +56,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist && node ./scripts/postbuild.mjs",
+    "dev": "vite build --watch --configLoader native",
+    "build": "vite build --configLoader native && vue-tsc --declaration --emitDeclarationOnly --outDir dist && node ./scripts/postbuild.mjs",
     "typecheck": "vue-tsc --noEmit -p tsconfig.json"
   },
   "peerDependencies": {
